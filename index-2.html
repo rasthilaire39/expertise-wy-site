@@ -272,6 +272,108 @@ footer{background:var(--navy);padding:3.5rem 0 1.5rem}
     </div>
   </div>
 </section>
+<section style="background:var(--cream);padding:5rem 0;">
+  <div class="container" style="max-width:800px;">
+    <div class="text-center" style="margin-bottom:3rem;">
+      <span class="section-tag">Questions fréquentes</span>
+      <h2 class="section-title">Tout ce que vous voulez <em>savoir</em></h2>
+      <p class="section-sub" style="margin:1rem auto 0;">Vous avez des questions avant de nous contacter ? Voici les réponses aux questions que nous recevons le plus souvent.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:.75rem;" id="faq-list">
+
+      <div class="faq-item" style="background:white;border:1px solid var(--border);border-radius:10px;overflow:hidden;">
+        <button class="faq-q" onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:1.25rem 1.5rem;font-size:1rem;font-weight:600;color:var(--navy);background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+          Est-ce que vous travaillez avec les écoles et les institutions publiques ?
+          <span class="faq-icon" style="font-size:1.3rem;flex-shrink:0;transition:transform .3s;">+</span>
+        </button>
+        <div class="faq-a" style="display:none;padding:0 1.5rem 1.25rem;color:var(--text-mid);line-height:1.75;">
+          Oui, c'est même notre spécialité. La majorité de nos clients sont des centres de services scolaires, des municipalités, des CPE et des OMH. Nous sommes habitués aux contraintes des institutions publiques : horaires restreints, appels d'offres, exigences particulières. Nous intervenons en soirée et les fins de semaine pour ne pas perturber vos activités.
+        </div>
+      </div>
+
+      <div class="faq-item" style="background:white;border:1px solid var(--border);border-radius:10px;overflow:hidden;">
+        <button class="faq-q" onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:1.25rem 1.5rem;font-size:1rem;font-weight:600;color:var(--navy);background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+          Combien de temps dure une intervention ?
+          <span class="faq-icon" style="font-size:1.3rem;flex-shrink:0;transition:transform .3s;">+</span>
+        </button>
+        <div class="faq-a" style="display:none;padding:0 1.5rem 1.25rem;color:var(--text-mid);line-height:1.75;">
+          Cela dépend de la superficie et du type de service. Un entretien préventif sur une grande salle peut se faire en une nuit. Une remise à neuf complète sur plusieurs locaux peut s'étaler sur 2 à 5 jours. Lors de votre soumission gratuite, nous vous donnons un calendrier précis pour que vous puissiez planifier en conséquence.
+        </div>
+      </div>
+
+      <div class="faq-item" style="background:white;border:1px solid var(--border);border-radius:10px;overflow:hidden;">
+        <button class="faq-q" onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:1.25rem 1.5rem;font-size:1rem;font-weight:600;color:var(--navy);background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+          Combien ça coûte ?
+          <span class="faq-icon" style="font-size:1.3rem;flex-shrink:0;transition:transform .3s;">+</span>
+        </button>
+        <div class="faq-a" style="display:none;padding:0 1.5rem 1.25rem;color:var(--text-mid);line-height:1.75;">
+          Chaque projet est unique — la superficie, le type de surface, l'état du plancher et le service requis influencent le prix. C'est pourquoi nous offrons une soumission gratuite et sans engagement. Vous recevez un prix clair et détaillé avant qu'on commence quoi que ce soit. Aucune surprise.
+        </div>
+      </div>
+
+      <div class="faq-item" style="background:white;border:1px solid var(--border);border-radius:10px;overflow:hidden;">
+        <button class="faq-q" onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:1.25rem 1.5rem;font-size:1rem;font-weight:600;color:var(--navy);background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+          Sur quels types de planchers intervenez-vous ?
+          <span class="faq-icon" style="font-size:1.3rem;flex-shrink:0;transition:transform .3s;">+</span>
+        </button>
+        <div class="faq-a" style="display:none;padding:0 1.5rem 1.25rem;color:var(--text-mid);line-height:1.75;">
+          Nous traitons la grande majorité des surfaces commerciales : vinyle, linoléum, terrazzo, béton poli et surfaces dures. Si vous n'êtes pas certain du type de revêtement de votre bâtiment, pas de problème — nous l'identifions lors de notre visite d'évaluation gratuite.
+        </div>
+      </div>
+
+      <div class="faq-item" style="background:white;border:1px solid var(--border);border-radius:10px;overflow:hidden;">
+        <button class="faq-q" onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:1.25rem 1.5rem;font-size:1rem;font-weight:600;color:var(--navy);background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+          Vos produits sont-ils sécuritaires pour les enfants et les usagers ?
+          <span class="faq-icon" style="font-size:1.3rem;flex-shrink:0;transition:transform .3s;">+</span>
+        </button>
+        <div class="faq-a" style="display:none;padding:0 1.5rem 1.25rem;color:var(--text-mid);line-height:1.75;">
+          Absolument. Nous utilisons des produits professionnels homologués, adaptés aux environnements fréquentés par des enfants et du public. Nos anciens rôles de représentants chez des fabricants de produits sanitaires nous donnent une connaissance approfondie de chaque produit que nous utilisons.
+        </div>
+      </div>
+
+      <div class="faq-item" style="background:white;border:1px solid var(--border);border-radius:10px;overflow:hidden;">
+        <button class="faq-q" onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:1.25rem 1.5rem;font-size:1rem;font-weight:600;color:var(--navy);background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+          Dans quel délai peut-on vous avoir sur place ?
+          <span class="faq-icon" style="font-size:1.3rem;flex-shrink:0;transition:transform .3s;">+</span>
+        </button>
+        <div class="faq-a" style="display:none;padding:0 1.5rem 1.25rem;color:var(--text-mid);line-height:1.75;">
+          Nous répondons à toutes les demandes de soumission en moins de 48 heures. Pour les cas urgents, contactez-nous directement — nous faisons notre possible pour intervenir rapidement. Nous sommes disponibles 7 jours sur 7 et nous adaptons notre horaire au vôtre.
+        </div>
+      </div>
+
+      <div class="faq-item" style="background:white;border:1px solid var(--border);border-radius:10px;overflow:hidden;">
+        <button class="faq-q" onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:1.25rem 1.5rem;font-size:1rem;font-weight:600;color:var(--navy);background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+          Qu'est-ce que l'Académie WY ?
+          <span class="faq-icon" style="font-size:1.3rem;flex-shrink:0;transition:transform .3s;">+</span>
+        </button>
+        <div class="faq-a" style="display:none;padding:0 1.5rem 1.25rem;color:var(--text-mid);line-height:1.75;">
+          L'Académie WY est la seule formation certifiée en entretien de planchers au Québec. Elle s'adresse aux concierges et techniciens d'entretien des écoles, municipalités et CPE. En 3 blocs progressifs, vos employés apprennent les bonnes techniques, les bons produits et les bons équipements — ce qui réduit les coûts d'entretien à long terme. <a href="academie.html" style="color:var(--gold);font-weight:600;">En savoir plus sur l'Académie WY →</a>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <p style="color:var(--text-mid);margin-bottom:1rem;">Vous avez une autre question ?</p>
+      <a href="contact.html" class="btn-gold">Nous écrire directement</a>
+    </div>
+  </div>
+</section>
+
+<script>
+function toggleFaq(btn) {
+  var answer = btn.nextElementSibling;
+  var icon = btn.querySelector('.faq-icon');
+  var isOpen = answer.style.display === 'block';
+  document.querySelectorAll('.faq-a').forEach(function(a){ a.style.display='none'; });
+  document.querySelectorAll('.faq-icon').forEach(function(i){ i.textContent='+'; i.style.transform='rotate(0deg)'; });
+  if (!isOpen) {
+    answer.style.display = 'block';
+    icon.textContent = '×';
+    icon.style.transform = 'rotate(0deg)';
+  }
+}
+</script>
+
 <section class="cta-section">
   <div class="container">
     <h2 class="cta-title">Prêt à redonner l'éclat<br><em>à vos planchers ?</em></h2>
