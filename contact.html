@@ -4,14 +4,20 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Contact — Expertise WY</title>
-<meta name="description" content="Expertise WY — Entretien prestige de planchers pour institutions scolaires, municipalités et CPE au Québec."/>
+<meta name="description" content="Contactez Expertise WY pour une soumission gratuite : entretien de planchers, remise à neuf ou tapis d'hiver pour votre CPE, école ou municipalité."/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Contact — Expertise WY"/>
+<meta property="og:description" content="Demandez une soumission gratuite : entretien de planchers, remise à neuf ou tapis d'hiver pour votre CPE, école ou municipalité."/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Contact — Expertise WY"/>
+<meta name="twitter:description" content="Demandez une soumission gratuite pour votre CPE, école ou municipalité."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --black:#080808;--white:#f5f4f0;--gold:#c9a84c;--gold-light:#e0c47a;--gold-dark:#9a7a2e;
+  --black:#080808;--white:#f5f4f0;--gold:#c9a84c;--gold-light:#e0c47a;--gold-dark:#9a7a2e;--gold-text:#8a6a24;
   --navy:#0d1b2e;--navy-mid:#152540;--cream:#f8f7f3;--text-dark:#1a1a2e;--text-mid:#4a5568;
   --border:rgba(0,0,0,.08);--shadow:0 4px 24px rgba(0,0,0,.08);
 }
@@ -53,7 +59,7 @@ footer{background:var(--navy);padding:3.5rem 0 1.5rem}
 .footer-contact-item a{color:rgba(255,255,255,.45);text-decoration:none;transition:color .2s}
 .footer-contact-item a:hover{color:var(--gold)}
 .footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
-.footer-copy{font-size:.72rem;color:rgba(255,255,255,.25)}
+.footer-copy{font-size:.72rem;color:rgba(255,255,255,.6)}
 .footer-social{display:flex;gap:.6rem}
 .footer-social a{width:34px;height:34px;border:1px solid rgba(255,255,255,.1);border-radius:6px;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:all .2s}
 .footer-social a:hover{border-color:var(--gold);background:rgba(201,168,76,.1)}
@@ -63,7 +69,8 @@ footer{background:var(--navy);padding:3.5rem 0 1.5rem}
 .container{max-width:1280px;margin:0 auto;padding:0 2.5rem}
 .fade-in{opacity:1;transform:translateY(0);transition:opacity .6s ease,transform .6s ease}
 .fade-in.visible{opacity:1;transform:translateY(0)}
-.section-tag{font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:.7rem}
+.section-tag{font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-text);display:block;margin-bottom:.7rem}
+.page-hero .section-tag{color:var(--gold)}
 .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:400;line-height:1.2;color:var(--navy)}
 .section-title em{font-style:italic;color:var(--gold)}
 .section-sub{font-size:.97rem;color:var(--text-mid);line-height:1.75;max-width:600px}
@@ -139,15 +146,15 @@ footer{background:var(--navy);padding:3.5rem 0 1.5rem}
     </a>
     <ul class="nav-links"><li><a href="index.html" class="">Accueil</a></li><li><a href="services.html" class="">Services</a></li><li><a href="tapis-hiver.html" class="">Tapis d'hiver</a></li><li><a href="academie.html" class="">Académie WY</a></li><li><a href="projets.html" class="">Réalisations</a></li><li><a href="apropos.html" class="">À propos</a></li><li><a href="contact.html" class="active">Contact</a></li></ul>
     <a href="contact.html" class="nav-cta">Soumission gratuite</a>
-    <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <button class="nav-hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="mobile-nav" id="mobileNav">
-  <button class="mobile-nav-close" id="mobileNavClose">✕</button>
+  <button class="mobile-nav-close" id="mobileNavClose" aria-label="Fermer le menu">✕</button>
   <a href="index.html" class="mobile-link">Accueil</a><a href="services.html" class="mobile-link">Services</a><a href="tapis-hiver.html" class="mobile-link">Tapis d'hiver</a><a href="academie.html" class="mobile-link">Académie WY</a><a href="projets.html" class="mobile-link">Réalisations</a><a href="apropos.html" class="mobile-link">À propos</a><a href="contact.html" class="mobile-link">Contact</a>
   <a href="contact.html" class="mobile-link" style="color:var(--gold)">Soumission gratuite</a>
 </div>
-
+<main>
 <div class="page-hero">
   <div class="container">
     <span class="section-tag" style="justify-content:center;display:flex;">Travaillons ensemble</span>
@@ -218,6 +225,7 @@ footer{background:var(--navy);padding:3.5rem 0 1.5rem}
     </div>
   </div>
 </section>
+</main>
 <script>function toggleFaq(btn){var a=btn.nextElementSibling;var i=btn.querySelector(".faq-icon");var open=a.style.display==="block";document.querySelectorAll(".faq-a").forEach(function(x){x.style.display="none";});document.querySelectorAll(".faq-icon").forEach(function(x){x.textContent="+";});if(!open){a.style.display="block";i.textContent="×";}}</script>
 
 <footer>
@@ -263,4 +271,25 @@ footer{background:var(--navy);padding:3.5rem 0 1.5rem}
     <div class="footer-bottom">
       <p class="footer-copy">© 2025 Expertise WY — Entretien Prestige. Tous droits réservés.</p>
       <p class="footer-copy">Québec, Canada · expertisewy.com</p>
-   
+    </div>
+  </div>
+</footer>
+<script>
+const navbar=document.getElementById('navbar');
+const hamburger=document.getElementById('hamburger');
+const mobileNav=document.getElementById('mobileNav');
+const closeMobileNav=()=>{mobileNav.classList.remove('open');hamburger.setAttribute('aria-expanded','false')};
+window.addEventListener('scroll',()=>navbar.classList.toggle('scrolled',window.scrollY>60));
+hamburger.addEventListener('click',()=>{mobileNav.classList.add('open');hamburger.setAttribute('aria-expanded','true')});
+document.getElementById('mobileNavClose').addEventListener('click',closeMobileNav);
+document.querySelectorAll('.mobile-link').forEach(l=>l.addEventListener('click',closeMobileNav));
+const contactForm=document.querySelector('form.contact-form');
+if(contactForm){
+  contactForm.addEventListener('submit',()=>{
+    const btn=contactForm.querySelector('button[type="submit"]');
+    if(btn){btn.disabled=true;btn.textContent='Envoi en cours…';}
+  });
+}
+</script>
+</body>
+</html>
