@@ -190,17 +190,17 @@ footer{background:var(--navy);padding:3.5rem 0 1.5rem}
           <div class="contact-form-title">Demande de soumission</div>
           <div class="contact-form-sub">Réponse sous 24–48h. Aucun engagement requis.</div>
           <div class="form-row">
-            <div class="form-group"><label>Nom complet *</label><input type="text" name="nom" placeholder="Jean Tremblay" required/></div>
+            <div class="form-group"><label for="c-nom">Nom complet *</label><input type="text" id="c-nom" name="nom" placeholder="Jean Tremblay" required/></div>
             <div class="form-group"><label for="c-etablissement">Nom de l'établissement / entreprise</label><input type="text" id="c-etablissement" name="etablissement" placeholder="École, CPE, municipalité…"/></div>
           </div>
           <div class="form-row">
-            <div class="form-group"><label>Courriel *</label><input type="email" name="email" placeholder="jean@organisation.qc.ca" required/></div>
-            <div class="form-group"><label>Téléphone</label><input type="tel" name="telephone" placeholder="418 000-0000"/></div>
+            <div class="form-group"><label for="c-email">Courriel *</label><input type="email" id="c-email" name="email" placeholder="jean@organisation.qc.ca" required/></div>
+            <div class="form-group"><label for="c-telephone">Téléphone</label><input type="tel" id="c-telephone" name="telephone" placeholder="418 000-0000"/></div>
           </div>
-          <div class="form-group"><label>Service souhaité</label>
-            <select name="service"><option value="" disabled selected>Choisir un service…</option><option>Remise à neuf complète</option><option>Décapage et récurage</option><option>Cirage et polissage</option><option>Entretien préventif</option><option>Académie WY — Formation</option><option>Tapis d'hiver microfibre</option><option>Autre / Plusieurs services</option></select>
+          <div class="form-group"><label for="c-service">Service souhaité</label>
+            <select id="c-service" name="service"><option value="" disabled selected>Choisir un service…</option><option>Remise à neuf complète</option><option>Décapage et récurage</option><option>Cirage et polissage</option><option>Entretien préventif</option><option>Académie WY — Formation</option><option>Tapis d'hiver microfibre</option><option>Autre / Plusieurs services</option></select>
           </div>
-          <div class="form-group"><label>Description du projet</label><textarea name="message" placeholder="Décrivez votre espace, la superficie approximative, vos besoins ou questions…"></textarea></div>
+          <div class="form-group"><label for="c-message">Description du projet</label><textarea id="c-message" name="message" placeholder="Décrivez votre espace, la superficie approximative, vos besoins ou questions…"></textarea></div>
           <button type="submit" class="form-submit">Envoyer ma demande →</button>
           <p class="form-note">Vos informations sont confidentielles et ne seront jamais partagées.</p>
         </form>
